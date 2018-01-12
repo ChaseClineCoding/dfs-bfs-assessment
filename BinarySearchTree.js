@@ -37,21 +37,6 @@ class BinarySearchTree {
 		cb(node.data)
 		this.dfs(cb, node.left)
 		this.dfs(cb, node.right)
-		// cb(node.data)
-		// if (node.left && node.right) {
-		// 	stack.push(node.right)
-		// 	this.dfs(cb, node.left, stack)
-		// } else if (node.left) {
-		// 	this.dfs(cb, node.left, stack)
-		// } else if (node.right) {
-		// 	this.dfs(cb, node.right, stack)
-		// } else if (!node.left && !node.right && stack.length > 0){
-		// 	this.dfs(cb, stack.pop(), stack)
-		// } else if (!node.left && !node.right && stack.length < 1) {
-		// 	return
-		// }
-    // Write an algorithm using depth first search that will take in a callback function and call it while passing each nodes data starting down the left path
-		// Expected order: '25, 15, 17, 197, 97, 9997'
 	}
 
 	bfs(cb, node=this.root) {
